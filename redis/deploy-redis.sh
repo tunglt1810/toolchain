@@ -1,0 +1,1 @@
+docker run -d --name redis -p 6379:6379 -it redis:7.0.7-alpine
