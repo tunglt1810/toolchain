@@ -80,7 +80,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions)
 
-setopt histignorespace
+setopt HIST_IGNORE_SPACE
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_NO_STORE
+setopt HIST_NO_FUNCTIONS
 
 source $ZSH/oh-my-zsh.sh
 
